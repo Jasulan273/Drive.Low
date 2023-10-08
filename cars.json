@@ -1,50 +1,42 @@
 [
     {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG/400px-Vintage_car_at_the_Wirral_Bus_%26_Tram_Show_-_DSC03336.JPG",
-        "title": "Vauxhall Chevette",
-        "start_production": 1975,
-        "class": "Supermini"
+        "id":1,
+        "image": "https://media.ed.edmunds-media.com/audi/q5/2022/oem/2022_audi_q5_4dr-suv_prestige-s-line_fq_oem_1_1600.jpg",
+        "title": "Audi Q5",
+        "year": 2016,
+        "price": "60000",
+        "price_per_month": "600",
+        "fuel":"Petrol",
+        "type":"Auto"
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Dynamixion_car_by_Buckminster_Fuller_1933_%28side_views%29.jpg/400px-Dynamixion_car_by_Buckminster_Fuller_1933_%28side_views%29.jpg",
-        "title": "Dymaxion car",
-        "start_production": 1933,
-        "class": "Concept car"
+        "id":2,
+        "image": "https://www.ixbt.com/img/n1/news/2023/8/1/audi-q6-e-tron-die-front-des-prototypen%20(1)_large.jpg",
+        "title": "Audi Q6",
+        "year": 2018,
+        "price": "50000",
+        "price_per_month": "500",
+        "fuel":"Diesel",
+        "type":"Auto"
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ford_Crown_Victoria_LX.jpg/400px-Ford_Crown_Victoria_LX.jpg",
-        "title": "Ford Crown Victoria",
-        "start_production": 1955,
-        "class": "Full-size Ford"
+        "id":3,
+        "image": "https://wroom.ru/i/cars2/audi_rs5_2.jpg",
+        "title": "Audi RS5",
+        "year": 2021,
+        "price": "120000",
+        "price_per_month": "970",
+        "fuel":"Petrol",
+        "type":"Auto"
     },
     {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Plymouth_Superbird.jpg/400px-Plymouth_Superbird.jpg",
-        "title": "Plymouth Superbird",
-        "start_production": 1970,
-        "class": "Muscle car(today) and Race car(Past)"
-    },
-    {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2nd-Saab-9000-hatch.jpg/400px-2nd-Saab-9000-hatch.jpg",
-        "title": "Saab 9000",
-        "start_production": 1984,
-        "class": "Executive car"
-    },
-    {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2003-2005_Pontiac_Sunfire.jpg/400px-2003-2005_Pontiac_Sunfire.jpg",
-        "title": "Pontiac Sunfire",
-        "start_production": 1994,
-        "class": "Compact"
-    },
-    {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/1971_AMC_Javelin_SST_red_Kenosha_street.JPG/400px-1971_AMC_Javelin_SST_red_Kenosha_street.JPG",
-        "title": "AMC Javelin",
-        "start_production": 1967,
-        "class": "{{Unbulleted list| Pony car | Muscle car },},"
-    },
-    {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Jaguar_X-Type_Estate_front_20080731.jpg/400px-Jaguar_X-Type_Estate_front_20080731.jpg",
-        "title": "Jaguar X-Type",
-        "start_production": 2001,
-        "class": "Compact executive car"
+        "id":4,
+        "image": "https://cdn.motor1.com/images/mgl/VkzRG/s1/2020-audi-a8-l.jpg",
+        "title": "Audi A8",
+        "year": 2022,
+        "price": "89000",
+        "price_per_month": "800",
+        "fuel":"Gaz",
+        "type":"Auto"
     }
 ]
