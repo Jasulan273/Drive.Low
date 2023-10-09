@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "image": "https://media.ed.edmunds-media.com/audi/q5/2022/oem/2022_audi_q5_4dr-suv_prestige-s-line_fq_oem_1_1600.jpg",
+        "title": "Audi Q5",
+        "year": 2016,
+        "price": "60000",
+        "price_per_month": "600",
+        "fuel":"Petrol",
+        "type":"Auto"
+    },
+    {
+        "id":2,
+        "image": "https://www.ixbt.com/img/n1/news/2023/8/1/audi-q6-e-tron-die-front-des-prototypen%20(1)_large.jpg",
+        "title": "Audi Q6",
+        "year": 2018,
+        "price": "50000",
+        "price_per_month": "500",
+        "fuel":"Diesel",
+        "type":"Auto"
+    },
+    {
+        "id":3,
+        "image": "https://wroom.ru/i/cars2/audi_rs5_2.jpg",
+        "title": "Audi RS5",
+        "year": 2021,
+        "price": "120000",
+        "price_per_month": "970",
+        "fuel":"Petrol",
+        "type":"Auto"
+    },
+    {
+        "id":4,
+        "image": "https://cdn.motor1.com/images/mgl/VkzRG/s1/2020-audi-a8-l.jpg",
+        "title": "Audi A8",
+        "year": 2022,
+        "price": "89000",
+        "price_per_month": "800",
+        "fuel":"Gaz",
+        "type":"Auto"
+    }
+]
