@@ -361,6 +361,8 @@ h1 {
 
 .popular {
   height: 810px;
+  padding-bottom: 300px;
+  border-bottom: 1px solid #858181;
 }
 
 .popular_text {
@@ -481,4 +483,134 @@ h1 {
 
 .item a:hover{
   transform: translateY(-2px);
+}
+
+
+.experience{
+  height: 1450px;
+}
+
+.exp_text{
+  margin: 0 auto;
+  width: 630px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+
+.exp_text h1{
+  font-weight: 600;
+  text-align: center;
+  width: 622px;
+  color: var(--text-black-color);
+}
+
+.exp_text h3{
+  color: #858181;
+  text-align: center;
+  width: 533px;
+  font-weight: 400;
+}
+
+.car_exp{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exp_1 .exp_icon{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.exp_2 .exp_icon,
+.exp_3 .exp_icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+.left_exp .exp_icon div{
+  width: 80px;
+  height: 80px;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease-in;
+  margin-left: 81px;
+}
+
+.exp_icon div:hover{
+  transform: scale(1.1);
+}
+
+.exp_icon div i{
+  color: var(--background-orange-color);
+}
+
+.left_exp{
+  color: var(--text-black-color);
+  margin-top: 90px;
+}
+
+.left_exp h2{
+  font-weight: 600;
+  margin-top: 30px;
+  width: 185px;
+  text-align: center;
+  margin-left: 22px;
+}
+
+.right_exp .exp_icon img{
+  transform: scaleX(-1);
+}
+
+.right_block{
+  padding-right: 20px;
+}
+
+.left_block{
+  padding-left: 20px;
+}
+
+.right_exp{
+  color: var(--text-black-color);
+  margin-top: 90px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.right_exp h2{
+  font-weight: 600;
+  margin-top: 30px;
+  width: 185px;
+  text-align: center;
+}
+
+.right_exp .exp_icon{
+  text-align: end;
+  margin-right: 30px;
+}
+
+.right_exp .exp_icon div{
+  width: 80px;
+  height: 80px;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s all ease-in;
+  margin-left: 21px;
 }
