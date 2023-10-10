@@ -614,3 +614,152 @@ h1 {
   transition: 0.2s all ease-in;
   margin-left: 21px;
 }
+.about_devs{
+  height: 800px;
+  color: var(--text-black-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #D4D4D8;
+  border-bottom: 1px solid #D4D4D8;
+}
+.about_devs .container h1{
+  width: 830px;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+.devs{
+  margin: 0 auto;
+  width: 1012px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.devcard{
+  margin: 0 auto;
+  width: 210px;
+  height: 300px;
+  text-align: center;
+}
+.devcard img{
+  filter: grayscale(100%);
+}
+.devcard h2{
+  margin-top: 28px;
+  color: var(--text-black-color);
+}
+.devcard h3{
+  margin-top: 18px;
+  color: #858181;
+}
+.contact_form{
+  height: 930px;
+  margin: 0 auto;
+  color: var(--text-black-color);
+  display: flex;
+  
+}
+label{
+  font-weight:600;
+  font-size: 16px;
+  color: var(--text-black-color);
+}
+
+.contact_form h1{
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 55px;
+}
+.mainform{
+  width: 720px;
+  margin: 0 auto;
+}
+.mainform a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 48px;
+  background-color: var(--background-orange-color);
+  border-radius: 7px;
+  color: #fff;
+  transition: 0.2s all ease-in;
+  margin:0 auto;
+}
+
+.mainform a:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+.nextform{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.form{
+  width: 100%;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-control{
+  width: 100%;
+  color: #4F4F4F;
+  height: 53px;
+  padding-left: 25px;
+  border-radius: 10px;
+  margin-top:12px;
+}
+.form-control2{
+  width: 340px;
+  color: #4F4F4F; 
+  height: 55px;
+  padding-left: 25px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+.formnew{
+  width: 100%;
+  height: 81px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.formess{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.form-controlmess{
+  height: 94px;
+  width: 100%;
+  color: #4F4F4F;
+  padding-left: 25px;
+  padding-top: 12px;
+  border:1.6px solid #4F4F4F;
+  border-radius: 10px;
+  margin-top:12px;
+}
+.form-control::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.form-control2::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.form-controlmess::placeholder{
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
