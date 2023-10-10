@@ -7,9 +7,9 @@ fetch('cars.json')
         const car = data.find(car => car.id === carId);
 
         if (car) {
-     
+            document.getElementById('car-img').src = car.image;
             document.getElementById('car-name').textContent = car.title;
-            document.getElementById('car-price').textContent = `Цена: $${car.price}`;
+            document.getElementById('car-price').textContent = `Price: $${car.price}`;
         } else {
             alert('Товар не найден');
         }

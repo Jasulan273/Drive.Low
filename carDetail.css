@@ -1,0 +1,20 @@
+@import url(style.css);
+
+.item_page{
+    height: 900px;
+}
+
+.product_details{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    color: var(--text-black-color);
+}
+
+.details{
+    margin-left: 40px;
+}
+
+.details h2{
+    font-weight: normal;
+}
