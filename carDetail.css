@@ -34,9 +34,15 @@
     background-color: var(--background-orange-color);
     border-radius: 7px;
     margin-top: 40px;
+    transition: 0.2s all ease-in;
 }
 
 .price_button h3{
     color: #fff;
     font-size: 24xp;
+}
+
+.price_button:hover{
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
