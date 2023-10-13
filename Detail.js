@@ -9,7 +9,8 @@ fetch('cars.json')
         if (car) {
             document.getElementById('car-img').src = car.image;
             document.getElementById('car-name').textContent = car.title;
-            document.getElementById('car-price').textContent = `Price: $${car.price}`;
+            document.getElementById('car-price').textContent = `$${car.price}`;
+            document.getElementById('car-desc').textContent = car.description;
         } else {
             alert('Товар не найден');
         }

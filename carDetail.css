@@ -1,7 +1,7 @@
 @import url(style.css);
 
 .item_page{
-    height: 900px;
+    height: 500px;
 }
 
 .product_details{
@@ -13,8 +13,30 @@
 
 .details{
     margin-left: 40px;
+    margin-top: 40px;
 }
 
-.details h2{
+.details h3{
     font-weight: normal;
+}
+
+#car-desc{
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.price_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    background-color: var(--background-orange-color);
+    border-radius: 7px;
+    margin-top: 40px;
+}
+
+.price_button h3{
+    color: #fff;
+    font-size: 24xp;
 }

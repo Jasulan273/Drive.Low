@@ -7,7 +7,8 @@
         "price": "60000",
         "price_per_month": "600",
         "fuel":"Petrol",
-        "type":"Auto"
+        "type":"Auto",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
         "id":2,
@@ -17,7 +18,8 @@
         "price": "50000",
         "price_per_month": "500",
         "fuel":"Diesel",
-        "type":"Auto"
+        "type":"Auto",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
         "id":3,
@@ -27,7 +29,8 @@
         "price": "120000",
         "price_per_month": "970",
         "fuel":"Petrol",
-        "type":"Auto"
+        "type":"Auto",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     },
     {
         "id":4,
@@ -37,6 +40,7 @@
         "price": "89000",
         "price_per_month": "800",
         "fuel":"Gaz",
-        "type":"Auto"
+        "type":"Auto",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
     }
 ]
