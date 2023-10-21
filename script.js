@@ -46,31 +46,58 @@ options.forEach(option => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('cars.json')
+        .then(response => response.json())
+        .then(data => {
+            const cars = document.getElementById('cars');
+            const carsHtml = data.slice(0, 4).map(car => `
+                <!-- Ваш существующий код HTML для отображения машин -->
+            `).join('');
+
+            cars.innerHTML = carsHtml;
+
+            const brandLinks = document.querySelectorAll('.brands a');
+
+            brandLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    brandLinks.forEach(brandLink => brandLink.classList.remove('active'));
+                    this.classList.add('active');
+                    const selectedBrand = this.getAttribute('data-brand');
+                    const filteredCarsHtml = data
+                        .filter(car => car.brand === selectedBrand)
+                        .slice(0, 4)
+                        .map(car => `
+                        <div class="item">
+                        <img src="${car.image}" alt="" style="width: 265px;
+                        height: 150px;border-radius: 14px;">
+                        <h2>${car.title}</h2>
+                        <div class="price"><h3>$${car.price}</h3><span>|</span><h3>$${car.price_per_month}/month</h3></div>
+                        <div class="info">
+                           <div><i class='bx bxs-bolt-circle'></i><h4>${car.year}</h4></div> 
+                            <div><i class='bx bxs-car'></i><h4>${car.type}</h4></div>
+                            <div><i class='bx bx-color-fill'></i><h4>${car.fuel}</h4></div>
+                        </div>
+                        <a href="#" onclick="navigateToItemPage(${car.id}); return false;"><h3>Rent Now</h3></a>
+                    </div>
+                        `)
+                        .join('');
+
+                    cars.innerHTML = filteredCarsHtml;
+                });
+            });
+
+            // Найдите ссылку с брендом "Audi" и выполните событие "click" на ней
+            const defaultBrand = document.querySelector('.brands a[data-brand="Audi"]');
+            defaultBrand.click();
+        })
+        .catch(error => console.error('Ошибка при загрузке данных о товарах:', error));
+});
+
+
 const cars = document.getElementById('cars');
 function navigateToItemPage(carId) {
     const carPageUrl = `carDetail.html?id=${carId}`;
     window.location.href = carPageUrl;
 }
-
-
-fetch('cars.json')
-    .then(response => response.json())
-    .then(data => {
-        const carsHtml = data.map(car => `
-        <div class="item">
-        <img src="${car.image}" alt="" style="width: 265px;
-        height: 150px;border-radius: 14px;">
-        <h2>${car.title}</h2>
-        <div class="price"><h3>$${car.price}</h3><span>|</span><h3>$${car.price_per_month}/month</h3></div>
-        <div class="info">
-           <div><i class='bx bxs-bolt-circle'></i><h4>${car.year}</h4></div> 
-            <div><i class='bx bxs-car' ></i><h4>${car.type}</h4></div>
-            <div><i class='bx bx-color-fill'></i><h4>${car.fuel}</h4></div>
-        </div>
-        <a href="#" onclick="navigateToItemPage(${car.id}); return false;"><h3>Rent Now</h3></a>
-    </div>
-        `).join('');
-
-        cars.innerHTML = carsHtml;
-    })
-    .catch(error => console.error('Ошибка при загрузке данных о товарах:', error));

@@ -9,8 +9,11 @@ fetch('cars.json')
         if (car) {
             document.getElementById('car-img').src = car.image;
             document.getElementById('car-name').textContent = car.title;
-            document.getElementById('car-price').textContent = `$${car.price}`;
-            document.getElementById('car-desc').textContent = car.description;
+            document.getElementById('car-price_per_month').textContent = `$${car.price_per_month}`;
+            document.getElementById('car-type').textContent = car.type;
+            document.getElementById('car-fuel').textContent = car.fuel;
+            document.getElementById('car-year').textContent = car.year;
+            document.getElementById('car-price').textContent = car.price;
         } else {
             alert('Товар не найден');
         }
