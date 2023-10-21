@@ -749,8 +749,10 @@ label {
 }
 
 .formess textarea {
-  width: 100%;
-  height: 130px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 200px;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
