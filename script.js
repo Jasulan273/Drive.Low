@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             const cars = document.getElementById('cars');
             const carsHtml = data.slice(0, 4).map(car => `
-                <!-- Ваш существующий код HTML для отображения машин -->
             `).join('');
 
             cars.innerHTML = carsHtml;

@@ -1,0 +1,25 @@
+@import url(style.css);
+
+.catalog{
+    width: 100%;
+    min-height: 700px;
+    color: var(--text-black-color);
+    margin-bottom: 100px;
+}
+
+.catalog_title{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.cars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin-bottom: 60px;
+}
