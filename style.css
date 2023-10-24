@@ -645,8 +645,12 @@ h1 {
   text-align: center;
 }
 
+
 .devcard img {
   filter: grayscale(100%);
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
 }
 
 .devcard h2 {
