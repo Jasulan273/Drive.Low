@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Catalog.css" />
+    <link rel="stylesheet" href="About.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="img/car.ico" />
-    <title>Drive Now | Catalog</title>
+    <title>Drive Now | About</title>
   </head>
 
   <body>
@@ -31,20 +31,35 @@
       </div>
     </nav>
 
-    <section class="catalog">
-      <div class="container">
-        <div class="car_catalog">
-          <div class="catalog_title">
-            <h1>Our Cars</h1>
-            <h3 style="color: #858181;">We have a wide range of machines to choose from</h3>
-            <div class="cars" id="catalog">
-
+     <section class="about">
+        <div class="container">
+            <div class="about_us">
+                <div class="infoblock"></div>
+                <div class="blocks">
+                    <div class="block">
+                      <i class='bx bxs-home-alt-2 bx-md'></i>
+                      <h2>Who we are?</h2>
+                      <h4>We are a start-up car rental company in Kazakhstan</h4>
+                    </div>
+                    <div class="block">
+                      <i class='bx bxs-time bx-md' ></i>
+                      <h2>When did you start?</h2>
+                      <h4>We started our career in the capital in 2023</h4>
+                    </div>
+                    <div class="block">
+                      <i class='bx bxs-group bx-md' ></i>
+                      <h2>Amount of workers?</h2>
+                      <h4>We have more than 300 employees in our companies</h4>
+                    </div>
+                    <div class="block">
+                      <i class='bx bxs-star bx-md' ></i>
+                      <h2>Customer Reviews</h2>
+                      <h4>98% of clients are satisfied with our services</h4>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-
+     </section>
     <footer>
       <div class="container">
         <div class="footer_nav">
@@ -73,34 +88,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const catalog = document.getElementById("catalog");
-
-        fetch("cars.json")
-          .then((response) => response.json())
-          .then((data) => {
-            data.forEach((car) => {
-              const item = document.createElement("div");
-              item.className = "item";
-              item.innerHTML = `
-          <img src="${car.image}" alt="" style="width: 265px; height: 150px; border-radius: 14px;">
-          <h2>${car.title}</h2>
-          <div class="price">
-            <h3>$${car.price}</h3><span>|</span><h3>$${car.price_per_month}/month</h3>
-          </div>
-          <div class="info">
-            <div><i class='bx bxs-bolt-circle'></i><h4>${car.year}</h4></div>
-            <div><i class='bx bxs-car'></i><h4>${car.type}</h4></div>
-            <div><i class='bx bx-color-fill'></i><h4>${car.fuel}</h4></div>
-          </div>
-          <a href="#" onclick="navigateToItemPage(${car.id}); return false;"><h3>Rent Now</h3></a>
-        `;
-
-              catalog.appendChild(item);
-            });
-          });
-      });
     </script>
   </body>
 </html>
