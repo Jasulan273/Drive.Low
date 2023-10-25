@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="item">
                         <img src="${car.image}" alt="" style="width: 265px;
                         height: 150px;border-radius: 14px;">
-                        <h2>${car.title}</h2>
+                        <h2>${car.brand} ${car.title}</h2>
                         <div class="price"><h3>$${car.price}</h3><span>|</span><h3>$${car.price_per_month}/month</h3></div>
                         <div class="info">
                            <div><i class='bx bxs-bolt-circle'></i><h4>${car.year}</h4></div> 

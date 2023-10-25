@@ -24,7 +24,7 @@
     {
       "id": 3,
       "brand": "Audi",
-      "title": "Audi Q3 35 TFSI",
+      "title": "Q3 35 TFSI",
       "year": 2019,
       "price": 36000,
       "price_per_month": 180,
@@ -112,7 +112,7 @@
     {
       "id": 11,
       "brand": "Toyota",
-      "title": "Land Cruiser Prado",
+      "title": "Land Cruiser",
       "year": 2022,
       "price": 97000,
       "price_per_month": 480,
@@ -145,7 +145,7 @@
     {
       "id": 14,
       "brand": "Nissan",
-      "title": "Almera Classic",
+      "title": "Almera",
       "year": 2007,
       "price": 3800,
       "price_per_month": 20,
@@ -310,7 +310,7 @@
     {
       "id": 29,
       "brand": "Mercedes",
-      "title": "G-Class AMG 63",
+      "title": "AMG 63",
       "year": 2023,
       "price": 320000,
       "price_per_month": 1600,
@@ -343,7 +343,7 @@
     {
       "id": 32,
       "brand": "Mercedes",
-      "title": "E-Class 200",
+      "title": "E-200",
       "year": 2017,
       "price": 37000,
       "price_per_month": 185,

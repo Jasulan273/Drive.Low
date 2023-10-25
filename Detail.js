@@ -8,7 +8,7 @@ fetch('cars.json')
 
         if (car) {
             document.getElementById('car-img').src = car.image;
-            document.getElementById('car-name').textContent = car.title;
+            document.getElementById('car-name').textContent = car.brand+car.title;
             document.getElementById('car-price_per_month').textContent = `$${car.price_per_month}`;
             document.getElementById('car-type').textContent = car.type;
             document.getElementById('car-fuel').textContent = car.fuel;
