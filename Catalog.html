@@ -78,7 +78,7 @@
         const pagination = document.getElementById("pagination");
         const itemsPerPage = 6;
         let currentPage = 1;
-        let paginationButtons; // Store pagination buttons for easy access
+        let paginationButtons; 
 
         fetch("cars.json")
           .then((response) => response.json())
@@ -87,11 +87,11 @@
             renderCatalogPage(data, currentPage);
             renderPaginationControls(totalPages);
 
-            // Get all pagination buttons and add click event listeners
+      
             paginationButtons = document.querySelectorAll(".pagination-button");
             paginationButtons.forEach((button) => {
               button.addEventListener("click", () => {
-                // Remove "active" class from the previously active button
+       
                 const prevActiveButton = document.querySelector(".pagination-button.active");
                 if (prevActiveButton) {
                   prevActiveButton.classList.remove("active");
@@ -100,7 +100,7 @@
                 currentPage = parseInt(button.dataset.page);
                 renderCatalogPage(data, currentPage);
 
-                // Add "active" class to the clicked button
+      
                 button.classList.add("active");
               });
             });
