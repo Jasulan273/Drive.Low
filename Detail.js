@@ -42,14 +42,16 @@ fetch('cars.json')
         document.addEventListener("DOMContentLoaded", function () {
             let form = document.getElementById('formControl');
             let modalContent = document.getElementById('modalContent');
-            let successImage = document.getElementById('successImage');
+            let newHTMLContent = "<h3 style='color:green;'>Submitted succesfully</h3>";
+            
         
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
                 document.querySelector("#sub").value = "Submitting...";
                 let data = new FormData(form);
                 setTimeout(function () {
-                    location.reload()
+                    modalContent.innerHTML = newHTMLContent;
+                    location.reload();
                 }, 2000); 
         
                 fetch('https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec', {
@@ -62,12 +64,6 @@ fetch('cars.json')
                 .then(function (data) {
                     document.querySelector("#msg").innerHTML = data;
                     document.querySelector("#sub").value = "Submit";
-        
-                    setTimeout(function () {
-                        // Скрываем форму и отображаем изображение с успешной отправкой
-                        modalContent.style.display = "none";
-                        successImage.style.display = "block";
-                    }, 2000);
                 });
             });
         });
