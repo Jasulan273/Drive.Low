@@ -19,3 +19,56 @@ fetch('cars.json')
         }
     })
     .catch(error => console.error('Ошибка при загрузке данных о товарах:', error));
+
+
+
+    const modal = document.getElementById("myModal");
+        const openButton = document.getElementById("openModal");
+        const closeButton = document.getElementById("closeModal");
+        modal.style.display = "none";
+        openButton.addEventListener("click", function() {
+            modal.style.display = "block";
+        });
+
+        closeButton.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            let form = document.getElementById('formControl');
+            let modalContent = document.getElementById('modalContent');
+            let successImage = document.getElementById('successImage');
+        
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                document.querySelector("#sub").value = "Submitting...";
+                let data = new FormData(form);
+                setTimeout(function () {
+                    location.reload()
+                }, 2000); 
+        
+                fetch('https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec', {
+                    method: "POST",
+                    body: data
+                })
+                .then(function (res) {
+                    return res.text();
+                })
+                .then(function (data) {
+                    document.querySelector("#msg").innerHTML = data;
+                    document.querySelector("#sub").value = "Submit";
+        
+                    setTimeout(function () {
+                        // Скрываем форму и отображаем изображение с успешной отправкой
+                        modalContent.style.display = "none";
+                        successImage.style.display = "block";
+                    }, 2000);
+                });
+            });
+        });
+        

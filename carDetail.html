@@ -48,12 +48,24 @@
                             <h3 id="car-price"></h3>
                         </div>
                     </div>
-                    <a href="#" class="price_button">
+                    <a href="#" class="price_button" id="openModal">
                         <h3 id="car-price_per_month"></h3>
                     </a>
                 </div>
             </div>
-
+            <div class="modal-container" id="myModal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Request</h2>
+                    <form id="formControl" action="https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="tel" name="phone" placeholder="Phone" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="submit" id="sub" value="Submit">
+                        <p id="msg"></p>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
