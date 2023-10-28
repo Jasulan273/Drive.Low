@@ -13,7 +13,6 @@
 
 .details {
   margin-left: 80px;
-  margin-top: 40px;
 }
 
 .details h3 {
@@ -21,7 +20,6 @@
 }
 
 #car-desc {
-  margin-top: 20px;
   line-height: 30px;
 }
 
@@ -124,12 +122,18 @@
     padding-left: 10px;
 }
 
+#formControl input:nth-child(3){
+ display: none;
+}
+
 #formControl input:nth-child(4){
    padding-left: 35%;
    background-color: var(--background-orange-color);
    color: #fff;
    border: none;
 }
+
+
 
 .close {
   position: absolute;

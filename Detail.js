@@ -8,12 +8,13 @@ fetch('cars.json')
 
         if (car) {
             document.getElementById('car-img').src = car.image;
-            document.getElementById('car-name').textContent = car.brand+car.title;
+            document.getElementById('car-name').textContent = car.brand + " " + car.title;
             document.getElementById('car-price_per_month').textContent = `$${car.price_per_month}`;
             document.getElementById('car-type').textContent = car.type;
             document.getElementById('car-fuel').textContent = car.fuel;
             document.getElementById('car-year').textContent = car.year;
             document.getElementById('car-price').textContent = car.price;
+            document.getElementById('model').value = car.brand + " " + car.title;
         } else {
             alert('Товар не найден');
         }
@@ -43,7 +44,7 @@ fetch('cars.json')
             let form = document.getElementById('formControl');
             let modalContent = document.getElementById('modalContent');
             let newHTMLContent = "<h3 style='color:green;'>Submitted succesfully</h3>";
-            
+         
         
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
