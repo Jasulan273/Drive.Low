@@ -23,49 +23,48 @@ fetch('cars.json')
 
 
 
-    const modal = document.getElementById("myModal");
-        const openButton = document.getElementById("openModal");
-        const closeButton = document.getElementById("closeModal");
+const modal = document.getElementById("myModal");
+const openButton = document.getElementById("openModal");
+const closeButton = document.getElementById("closeModal");
+modal.style.display = "none";
+openButton.addEventListener("click", function () {
+    modal.style.display = "block";
+});
+
+closeButton.addEventListener("click", function () {
+    modal.style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+    if (event.target == modal) {
         modal.style.display = "none";
-        openButton.addEventListener("click", function() {
-            modal.style.display = "block";
-        });
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    let form = document.getElementById('formControl');
+    let modalContent = document.getElementById('modalContent');
+    let newHTMLContent = "<h3 style='color:green;'>Submitted succesfully</h3>";
 
-        closeButton.addEventListener("click", function() {
-            modal.style.display = "none";
-        });
 
-        window.addEventListener("click", function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            let form = document.getElementById('formControl');
-            let modalContent = document.getElementById('modalContent');
-            let newHTMLContent = "<h3 style='color:green;'>Submitted succesfully</h3>";
-         
-        
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                document.querySelector("#sub").value = "Submitting...";
-                let data = new FormData(form);
-                setTimeout(function () {
-                    modalContent.innerHTML = newHTMLContent;
-                    location.reload();
-                }, 2000); 
-        
-                fetch('https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec', {
-                    method: "POST",
-                    body: data
-                })
-                .then(function (res) {
-                    return res.text();
-                })
-                .then(function (data) {
-                    document.querySelector("#msg").innerHTML = data;
-                    document.querySelector("#sub").value = "Submit";
-                });
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.querySelector("#sub").value = "Submitting...";
+        let data = new FormData(form);
+        setTimeout(function () {
+            modalContent.innerHTML = newHTMLContent;
+            location.reload();
+        }, 2000);
+
+        fetch('https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec', {
+            method: "POST",
+            body: data
+        })
+            .then(function (res) {
+                return res.text();
+            })
+            .then(function (data) {
+                document.querySelector("#msg").innerHTML = data;
+                document.querySelector("#sub").value = "Submit";
             });
-        });
-        
+    });
+});

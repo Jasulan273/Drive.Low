@@ -92,7 +92,7 @@
   text-align: center;
   width: 450px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin:0 auto;
+  margin: 0 auto;
   margin-top: 200px;
   display: flex;
   justify-content: center;
@@ -101,36 +101,36 @@
   color: var(--text-black-color);
 }
 
-#formControl{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 500px;
-    margin-top: 20px;
-    height: 400px;
+#formControl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-top: 20px;
+  height: 400px;
 }
 
-#formControl input{
-    display: flex;
-    width: 80%;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 7px;
-    border: 1px solid var(--text-black-color);
-    padding-left: 10px;
+#formControl input {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 1px solid var(--text-black-color);
+  padding-left: 10px;
 }
 
-#formControl input:nth-child(3){
- display: none;
+#formControl input:nth-child(3) {
+  display: none;
 }
 
-#formControl input:nth-child(4){
-   padding-left: 35%;
-   background-color: var(--background-orange-color);
-   color: #fff;
-   border: none;
+#formControl input:nth-child(4) {
+  padding-left: 35%;
+  background-color: var(--background-orange-color);
+  color: #fff;
+  border: none;
 }
 
 
