@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="carDetail.css">
+    <link rel="icon" type="image/x-icon" href="img/car.ico">
+    <title>Cars</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="logo">Drive.Now</h1>
+            <div class="links">
+                <a href="index.html">Main</a>
+                <a href="#">Catalog</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="#">About</a>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="item_page">
+        <div class="container">
+            <div class="product_details">
+                <img src="" id="car-img" alt="" width="750px" height="550px" style="border-radius: 10px;">
+                <div class="details">
+                    <h1 id="car-name"></h1>
+                    <div id="car-desc">
+                        <div><i class='bx bxs-car bx-sm'></i>
+                            <h3 id="car-type"></h3>
+                        </div>
+                        <div><i class='bx bx-color-fill bx-sm'></i>
+                            <h3 id="car-fuel"></h3>
+                        </div>
+                        <div><i class='bx bxs-bolt-circle bx-sm'></i>
+                            <h3 id="car-year"></h3>
+                        </div>
+                        <div><i style="font-size: 25px; font-style: normal; padding-left: 17px;">$</i>
+                            <h3 id="car-price"></h3>
+                        </div>
+                    </div>
+                    <a href="#" class="price_button" id="openModal">
+                        <h3 id="car-price_per_month"></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="modal-container" id="myModal">
+                <div id="modalContent" class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Request</h2>
+                    <form id="formControl" action="https://script.google.com/macros/s/AKfycbzy5HvSIepFA8NMF_ljcw0vcSK6WUELZvE_fPXFPE0AnJNV-oDshH-XnMPyT0Ciu-vfGg/exec">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="tel" name="phone" placeholder="Phone" pattern="[7]-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <input type="text" name="email" placeholder="Email" id="model" required>
+                        <input type="submit" id="sub" value="Submit">
+                        <p id="msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_nav">
+                <h1 class="logo">Drive.Now</h1>
+                <div class="links">
+                    <a href="#">Main</a>
+                    <a href="#">Catalog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="social_media">
+                    <a href="#"><i class='bx bxl-telegram bx-md'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp bx-md'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt bx-md'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <h3>© Copyright 2023, All Rights Reserved</h3>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Detail.js"></script>
+</body>
+
+</html>

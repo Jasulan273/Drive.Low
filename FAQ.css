@@ -1,0 +1,47 @@
+@import url(style.css);
+
+.faq {
+    width: 100%;
+    min-height: 600px;
+    color: var(--text-black-color);
+}
+
+.faq_main {
+    margin-top: 100px;
+}
+
+.question {
+    border-bottom: 2px solid var(--background-orange-color);
+    transition: all 0.2s ease-in-out;
+    margin-top: 50px;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question h1 {
+    font-size: 25px;
+}
+
+.question a {
+    color: var(--text-black-color);
+}
+
+.question a:hover {
+    color: var(--background-orange-color);
+    transition: .2s all ease-in-out;
+}
+
+.question-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    margin-top: 10px;
+    color: #858181;
+    margin-bottom: 5px;
+}
+  

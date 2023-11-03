@@ -3,13 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="img/car.ico">
     <title>Drive Now</title>
 </head>
 
@@ -18,10 +20,10 @@
         <div class="container">
             <h1 class="logo">Drive.Now</h1>
             <div class="links">
-                <a href="#">Main</a>
-                <a href="#">Catalog</a>
-                <a href="#">Contacts</a>
-                <a href="#">About</a>
+                <a href="index.html">Main</a>
+                <a href="Catalog.html">Catalog</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="About.html">About</a>
             </div>
 
         </div>
@@ -111,67 +113,163 @@
                     Top-Rated Dealer</h1>
             </div>
             <div class="brands">
-                <a class="active" href="#"><h3>Audi</h3></a>
-                <a class="" href="#"><h3>BMW</h3></a>
-                <a class="" href="#"><h3>Toyota</h3></a>
-                <a class="" href="#"><h3>Nissan</h3></a>
-                <a class="" href="#"><h3>Hyundai</h3></a>
-                <a class="" href="#"><h3>Mercedes</h3></a>
-                <a class="" href="#"><h3>Chevrolet</h3></a>
-                <a class="" href="#"><h3>Lexus</h3></a>
+                <a class="active" data-brand="Audi" href="#"><h3>Audi</h3></a>
+                <a class="" data-brand="BMW" href="#"><h3>BMW</h3></a>
+                <a class="" data-brand="Toyota" href="#"><h3>Toyota</h3></a>
+                <a class="" data-brand="Nissan" href="#"><h3>Nissan</h3></a>
+                <a class="" data-brand="Hyundai" href="#"><h3>Hyundai</h3></a>
+                <a class="" data-brand="Mercedes" href="#"><h3>Mercedes</h3></a>
+                <a class="" data-brand="Chevrolet" href="#"><h3>Chevrolet</h3></a>
+                <a class="" data-brand="Lexus" href="#"><h3>Lexus</h3></a>
             </div>
-            <div class="cars">
-                <div class="item">
-                    <img src="img/items/item1.png" alt="" style="width: 265px;
-                    height: 150px;border-radius: 14px;">
-                    <h2>Audi Q3</h2>
-                    <div class="price"><h3>$50,850</h3><span>|</span><h3>$508/month</h3></div>
-                    <div class="info">
-                       <div><i class='bx bxs-bolt-circle'></i><h4>2018</h4></div> 
-                        <div><i class='bx bxs-car' ></i><h4>Auto</h4></div>
-                        <div><i class='bx bx-color-fill'></i><h4>Diesel</h4></div>
+            <div class="cars" id="cars">
+             
+            </div>
+        </div>
+    </section>
+    <div class="experience"> 
+        <div class="container">
+            <div class="exp_text">
+                <h1>We Are Ensuring The Best
+                    Customer Experience</h1>
+                <h3>You cannot put a price on your family's safety and security
+                    on the road . Find a lower price ?</h3>
+            </div>
+            <div class="car_exp">
+                <div class="left_block">
+                   <div class="left_exp exp_1">
+                    <div class="exp_icon">
+                        <div><i class='bx bxs-purchase-tag bx-md' ></i></div>
+                        <img src="img/arrow_1.png" alt="">
                     </div>
-                    <a href="#"><h3>Rent Now</h3></a>
+                    <h2>Competitive Pricing</h2>
+                   </div>
+                   <div class="left_exp exp_2">
+                    <div class="exp_icon">
+                        <div><i class='bx bx-money-withdraw bx-md'></i></div>
+                        <img src="img/arrow_2.png" alt="">
+                    </div>
+                    <h2>Easier Rent On <br>
+                        Your Budget</h2>
+                   </div>
+                   <div class="left_exp exp_3">
+                    <div class="exp_icon">
+                        <div><i class='bx bxs-credit-card-front bx-md' ></i></div>
+                        <img src="img/arrow_2.png" alt="">
+                    </div>
+                    <h2>Most Flexible <br>
+                        Payment Plans</h2>
+                   </div>
+                   </div>
+                   <img src="img/exp_car.png" alt="">
+                   <div class="right_block">
+                    <div class="right_exp exp_1">
+                     <div class="exp_icon">
+                        <img src="img/arrow_1.png" alt="">
+                        <div><i class='bx bx-trending-up bx-md'></i></div>
+                     </div>
+                     <h2>The Best Extended
+                        Auto Warranties</h2>
+                    </div>
+                    <div class="right_exp exp_2">
+                     <div class="exp_icon">
+                        <img src="img/arrow_2.png" alt="">
+                         <div><i class='bx bxs-time bx-md'></i></div>
+                     </div>
+                     <h2>Roadside
+                        Assistance 24/7</h2>
+                    </div>
+                    <div class="right_exp exp_3">
+                     <div class="exp_icon">
+                        <img src="img/arrow_2.png" alt="">
+                        <div><i class='bx bxs-car-mechanic bx-md'></i></div>
+                     </div>
+                     <h2>Your Choice of
+                        Mechanic</h2>
+                    </div>
+                    </div>
                 </div>
-                <div class="item">
-                    <img src="img/items/item2.png" alt="" style="width: 265px;
-                    height: 150px;border-radius: 14px;">
-                    <h2>Audi Q4</h2>
-                    <div class="price"><h3>$55,850</h3><span>|</span><h3>$408/month</h3></div>
-                    <div class="info">
-                       <div><i class='bx bxs-bolt-circle'></i><h4>2018</h4></div> 
-                        <div><i class='bx bxs-car' ></i><h4>Auto</h4></div>
-                        <div><i class='bx bx-color-fill'></i><h4>Diesel</h4></div>
-                    </div>
-                    <a href="#"><h3>Rent Now</h3></a>
+            </div>
+        </div>
+    </div>
+    <section class="about_devs">
+        <div class="container">
+            <h1>Our Investors & Board of Directors</h1>
+            <div class="devs">
+                <div class="devcard">
+                    <img src="img/items/Lincoln.jpg" alt="">
+                    <h2>Zhasulan Delegatuly</h2>
+                    <h3>16th President, frontender</h3>
                 </div>
-                <div class="item">
-                    <img src="img/items/item3.png" alt="" style="width: 265px;
-                    height: 150px;border-radius: 14px;">
-                    <h2>Audi Q5</h2>
-                    <div class="price"><h3>$70,550</h3><span>|</span><h3>$600/month</h3></div>
-                    <div class="info">
-                       <div><i class='bx bxs-bolt-circle'></i><h4>2018</h4></div> 
-                        <div><i class='bx bxs-car' ></i><h4>Auto</h4></div>
-                        <div><i class='bx bx-color-fill'></i><h4>Diesel</h4></div>
-                    </div>
-                    <a href="#"><h3>Rent Now</h3></a>
+                <div class="devcard">
+                    <img src="img/items/Mak.jpg" alt="">
+                    <h2>Alisher Temirkhan</h2>
+                    <h3>Macedonian king, designer</h3>
                 </div>
-                <div class="item">
-                    <img src="img/items/item4.png" alt="" style="width: 265px;
-                    height: 150px;border-radius: 14px;">
-                    <h2>Audi Q7</h2>
-                    <div class="price"><h3>$90,900</h3><span>|</span><h3>$900/month</h3></div>
-                    <div class="info">
-                       <div><i class='bx bxs-bolt-circle'></i><h4>2018</h4></div> 
-                        <div><i class='bx bxs-car' ></i><h4>Auto</h4></div>
-                        <div><i class='bx bx-color-fill'></i><h4>Diesel</h4></div>
-                    </div>
-                    <a href="#"><h3>Rent Now</h3></a>
+                <div class="devcard">
+                    <img src="img/items/Aris.jpeg" alt="">
+                    <h2>Tair <br> Tulkubaev</h2>
+                    <h3>Philosopher, content maker</h3>
                 </div>
             </div>
         </div>
     </section>
+    <section class="contact_form">
+        <div class="container">
+            <h1>Reach out to us!</h1>
+            <div class="mainform">
+                <div class="form">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your full name">
+                </div>
+                <div class="nextform">
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="formnew">
+                        <label for="number">Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Enter your mobile number">
+                    </div>
+                </div>
+                <div class="formess">
+                    <label for="message">Message</label>
+                    <textarea  class="form-control" placeholder="Write a Message"></textarea>
+                </div>
+                <a href="#">
+                    <h4>Contact us</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_nav">
+                <h1 class="logo">Drive.Now</h1>
+                <div class="links">
+                    <a href="#">Main</a>
+                    <a href="#">Catalog</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="social_media">
+                   <a href="#"><i class='bx bxl-telegram bx-md'></i></a>
+                   <a href="#"><i class='bx bxl-whatsapp bx-md' ></i></a>
+                   <a href="#"><i class='bx bxl-instagram-alt bx-md' ></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <h3>© Copyright 2023, All Rights Reserved</h3>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                </div>
+          </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 

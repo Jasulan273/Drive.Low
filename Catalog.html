@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Catalog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/car.ico" />
+    <title>Drive Now | Catalog</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Drive.Now</h1>
+        <div class="links">
+          <a href="index.html">Main</a>
+          <a href="Catalog.html">Catalog</a>
+          <a href="FAQ.html">FAQ</a>
+          <a href="About.html">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="car_catalog">
+          <div class="catalog_title">
+            <h1>Our Cars</h1>
+            <h3 style="color: #858181;">We have a wide range of machines to choose from</h3>
+            <div class="cars" id="catalog"></div>
+            <div id="pagination" class="paginate"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_nav">
+          <h1 class "logo">Drive.Now</h1>
+          <div class="links">
+            <a href="index.html">Main</a>
+            <a href="Catalog.html">Catalog</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="About.html">About</a>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="bx bxl-telegram bx-md"></i></a>
+            <a href="#"><i class="bx bxl-whatsapp bx-md"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt bx-md"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <h3>© Copyright 2023, All Rights Reserved</h3>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        const catalog = document.getElementById("catalog");
+        const pagination = document.getElementById("pagination");
+        const itemsPerPage = 6;
+        let currentPage = 1;
+        let paginationButtons; 
+
+        fetch("cars.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const totalPages = Math.ceil(data.length / itemsPerPage);
+            renderCatalogPage(data, currentPage);
+            renderPaginationControls(totalPages);
+
+      
+            paginationButtons = document.querySelectorAll(".pagination-button");
+            paginationButtons.forEach((button) => {
+              button.addEventListener("click", () => {
+       
+                const prevActiveButton = document.querySelector(".pagination-button.active");
+                if (prevActiveButton) {
+                  prevActiveButton.classList.remove("active");
+                }
+
+                currentPage = parseInt(button.dataset.page);
+                renderCatalogPage(data, currentPage);
+
+      
+                button.classList.add("active");
+              });
+            });
+          });
+
+        function renderCatalogPage(data, page) {
+          catalog.innerHTML = "";
+
+          const startIndex = (page - 1) * itemsPerPage;
+          const endIndex = startIndex + itemsPerPage;
+          const pageData = data.slice(startIndex, endIndex);
+
+          pageData.forEach((car) => {
+            const item = document.createElement("div");
+            item.className = "item";
+            item.innerHTML = `
+            <div class="image" style="background-image:url(${car.image});"></div>
+          <div class="item_container"> 
+            <h2 style="text-align:left;">${car.brand} ${car.title}</h2>
+          <div class="price">
+            <h3>$${car.price}</h3><span>|</span><h3>$${car.price_per_month}/month</h3>
+          </div>
+          <div class="info">
+            <div><i class='bx bxs-bolt-circle'></i><h4>${car.year}</h4></div>
+            <div><i class='bx bxs-car'></i><h4>${car.type}</h4></div>
+            <div><i class='bx bx-color-fill'></i><h4>${car.fuel}</h4></div>
+          </div>
+          <a href="#" onclick="navigateToItemPage(${car.id}); return false;"><h3>Rent Now</h3></a></div>
+            `;
+
+            catalog.appendChild(item);
+          });
+        }
+
+        function renderPaginationControls(totalPages) {
+          pagination.innerHTML = "";
+
+          for (let i = 1; i <= totalPages; i++) {
+            const button = document.createElement("button");
+            button.innerText = i;
+            button.className = "pagination-button";
+            button.dataset.page = i;
+
+            if (i === currentPage) {
+              button.classList.add("active");
+            }
+
+            pagination.appendChild(button);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/car.ico">
+    <title>Drive Now | FAQ</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h1 class="logo">Drive.Now</h1>
+            <div class="links">
+                <a href="index.html">Main</a>
+                <a href="Catalog.html">Catalog</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="About.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="faq">
+        <div class="container">
+            <div class="faq_main">
+                <div class="question">
+                    <div class="title">
+                        <h1>How can you contact us or ask a question?</h1>
+                        <a href="#" class="question-button"><i class="bx bx-plus bx-md"></i></a>
+                    </div>
+                    <h3 class="question-content">
+                        You can write to us by email: contact@drive.now.com <br>
+                        You can call the number: +7 (7172) 777 66 55 or +7 (7172) 555 66 77
+                    </h3>
+                </div>
+                <div class="question">
+                    <div class="title">
+                        <h1>What cities do you work in?</h1>
+                        <a href="#" class="question-button"><i class="bx bx-plus bx-md"></i></a>
+                    </div>
+                    <h3 class="question-content">
+                        We operate in all cities of Kazakhstan. Our main branch is located in Astana.
+                    </h3>
+                </div>
+                <div class="question">
+                    <div class="title">
+                        <h1>Are your cars insured in case of an accident?</h1>
+                        <a href="#" class="question-button"><i class="bx bx-plus bx-md"></i></a>
+                    </div>
+                    <h3 class="question-content">
+                        Yes, all our cars are insured by different companies and in the event of an accident, the insurance company will compensate for damage to the vehicle. But you will be required to pay this amount to the insurance companies.
+                    </h3>
+                </div>
+                <div class="question">
+                    <div class="title">
+                        <h1>What happens if you delay payment for transport or do not return it on time?</h1>
+                        <a href="#" class="question-button"><i class="bx bx-plus bx-md"></i></a>
+                    </div>
+                    <h3 class="question-content">
+                        When signing a car rental agreement, we indicate a penalty for overdue use or for late provision of transport back to the company.
+                    </h3>
+                </div>
+                <div class="question">
+                    <div class="title">
+                        <h1>If my car breaks down, can I contact you for repairs?</h1>
+                        <a href="#" class="question-button"><i class="bx bx-plus bx-md"></i></a>
+                    </div>
+                    <h3 class="question-content">
+                        Yes, we have agreements with several transport repair centers and after an examination we can make repairs; if it is not your fault, then the company will cover the repair of the transport.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_nav">
+                <h1 class="logo">Drive.Now</h1>
+                <div class="links">
+                    <a href="index.html">Main</a>
+                    <a href="Catalog.html">Catalog</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="About.html">About</a>
+                </div>
+                <div class="social_media">
+                    <a href="#"><i class="bx bxl-telegram bx-md"></i></a>
+                    <a href="#"><i class="bx bxl-whatsapp bx-md"></i></a>
+                    <a href="#"><i class="bx bxl-instagram-alt bx-md"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <h3>© Copyright 2023, All Rights Reserved</h3>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+       const question_buttons = document.querySelectorAll(".question-button");
+        const question_contents = document.querySelectorAll(".question-content");
+
+        question_buttons.forEach((button, index) => {
+            button.addEventListener("click", function (e) {
+                e.preventDefault(); // Предотвращаем стандартное действие ссылки
+                if (question_contents[index].style.maxHeight) {
+                    question_contents[index].style.maxHeight = null;
+                } else {
+                    question_contents[index].style.maxHeight = question_contents[index].scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
