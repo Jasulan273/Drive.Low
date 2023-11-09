@@ -845,12 +845,3 @@ footer {
   color: #858181;
   opacity:1;
 }
-@media(min-width:320px) and (max-width:480px){
-  .container{
-    width:260px;
-    margin:0 auto;
-  }
-  nav{
-      height: 100%;
-  }
-}

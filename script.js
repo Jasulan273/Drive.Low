@@ -100,3 +100,13 @@ function navigateToItemPage(carId) {
     const carPageUrl = `carDetail.html?id=${carId}`;
     window.location.href = carPageUrl;
 }
+
+
+const links = document.querySelector('.links');
+const burgerMenu = document.querySelector('.burger');
+const menuToggle = document.querySelector('.burger_btn');
+
+
+menuToggle.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+});
