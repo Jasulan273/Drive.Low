@@ -1,7 +1,7 @@
 const options = document.querySelectorAll('.option');
 const optionDetail = document.querySelector('.option_detail h2');
 const optionDetailDescription = document.querySelector('.option_detail h3');
-
+const audio=new Audio('sound/enginesound.mp3')
 options.forEach(option => {
     option.addEventListener('click', function (event) {
         event.preventDefault();
@@ -47,6 +47,7 @@ options.forEach(option => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    audio.play();
     fetch('cars.json')
         .then(response => response.json())
         .then(data => {
