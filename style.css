@@ -50,6 +50,7 @@ h4 {
 .container {
   width: 1240px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 nav .container {
@@ -910,6 +911,23 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px !important;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+  
+  h3,
+  a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
   body{
     position: relative;
   }
@@ -961,7 +979,154 @@ footer {
     margin: 0 auto;
     margin-right: 290px;
   }
-}
+  header .text{ 
+    width: 100%;
+  }
+  header .text h3{
+    width: 490px;
+  }
+  .feedback{
+    display: none;
+  }
+  .instruction {
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+  }
+  .instruction .container .text h1{
+    width: 490px;
+  }
+  .instruction .container .text h3{
+    width: 490px;
+  }
+  .instruction .container .step h3{
+    width:98px;
+  }
+  .service .service_text {
+    width:490px
+  }
+  .service_details .options{
+    height: 60%;
+  }
+  .popular .container .popular_text{
+    width: 490px;
+  }
+  .brands {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .popular{
+    height: 1400px;
+  }
+  .cars{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .item{
+    width:230px ;
+    height:300px;
+  }
+  .item img{
+    width: 200px !important;
+    height: 100px !important;
+  }
+  .item h3{
+    font-size: 15px;
+  }
+  .item .info h4{
+    font-size: 8px;
+  }
+  .item a{
+    width: 150px;
+    margin-left: 25px;
+  }
+  .experience{
+    height: 900px;
+  }
+  .experience .container .exp_text{
+    width: 490px;
+  }
+  .experience .container .exp_text h1{
+    width: 450px;
+  }
+  .experience .container .exp_text h3{
+    width: 250px;
+  }
+  .experience .car_exp{
+    height: 800px;
+  }
+  .experience .car_exp .maincar{
+    display: none;
+  }
+  .experience .car_exp .arrow{
+    display: none;
+  }
+  .experience .car_exp h2{
+    font-size: 15px;
+  }
+  .experience .car_exp i{
+    transform: scale(0.8);
+  }
+  .experience .car_exp div{
+    width: 30px;
+    height: 30px;
+  }
+  .experience .left_exp:nth-child(n+1){
+    flex-direction: column;
+    display: flex;
+    align-items: baseline;
+  }
+  .experience .right_block{
+    margin-right: 100px;
+  }
+  .experience .right_exp:nth-child(n+1){
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .about_devs{
+    height: 1200px;
+  }
+  .about_devs h1{
+    display: flex;
+    justify-content: flex-end;
+    width: 490px !important;
+  }
+  .about_devs .devs{
+    width: 100%;
+    flex-direction: column;
+  }
+  .mainform{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+  }
+  .nextform{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+  .formess {
+    margin-top: 120px;
+  }
+  .contact_form h1{
+    width: 490px;
+    text-align: center;
+  }
+  .form-control{
+    width: 500px;
+  }
+  .contact_form a{
+    margin-right: 380px;
+  }
 @media screen and (max-width: 480px) {
 
 }
