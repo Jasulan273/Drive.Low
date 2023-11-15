@@ -297,6 +297,7 @@ h1 {
   color: #fff;
   align-items: center;
   margin-bottom: 20px;
+  
 }
 
 .option div {
@@ -366,7 +367,7 @@ h1 {
 }
 
 .popular {
-  height: 810px;
+  height: 1000px;
   padding-bottom: 300px;
   border-bottom: 1px solid #858181;
 }
@@ -644,7 +645,7 @@ h1 {
 .devcard {
   margin: 0 auto;
   width: 210px;
-  height: 300px;
+  height: 450px;
   text-align: center;
 }
 
@@ -857,7 +858,7 @@ footer {
   z-index: 1;
 }
 
-.active{
+.active_bar{
   display: none;
   color: #fff;
 }
@@ -872,38 +873,6 @@ footer {
 
 
 
-@media screen and (max-width: 1200px) {
-    .container{
-      width: 800px;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    
-    h2 {
-      font-size: 20px;
-    }
-    
-    h3,
-    a {
-      font-size: 14px;
-      font-weight: 600;
-    }
-    
-    h4 {
-      font-size: 12px;
-    }
-     
-    .feedback a{
-      min-width: 100px;
-      display: flex;
-    }
-    
-    .feedback a h4{
-      font-size: 12px;
-    }
-}
-
 
 @media screen and (max-width: 1024px) {
 
@@ -912,7 +881,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 25px !important;
+    font-size: 25px;
   }
   
   h2 {
@@ -1127,6 +1096,8 @@ footer {
   .contact_form a{
     margin-right: 380px;
   }
+
+}
 @media screen and (max-width: 480px) {
 
 }
