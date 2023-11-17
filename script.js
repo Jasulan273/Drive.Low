@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
 
-            // Найдите ссылку с брендом "Audi" и выполните событие "click" на ней
             const defaultBrand = document.querySelector('.brands a[data-brand="Audi"]');
             defaultBrand.click();
         })
